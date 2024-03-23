@@ -57,6 +57,7 @@ function Projects() {
               <img
                 className="h-[350px] w-[500px] rounded-2xl"
                 src={Projects.Image}
+                alt="projectimg"
               ></img>
               <div className="project-dec">
                 <p className="text-center py-5 px-5 text-white">
@@ -66,7 +67,7 @@ function Projects() {
                 <div>
                   <a
                     className="btn flex justify-center text-white"
-                    target="_blank"
+                    rel="projectlink"
                     href={Projects.link}
                   >
                     View Project

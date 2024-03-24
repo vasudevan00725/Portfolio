@@ -1,5 +1,4 @@
 import React from "react";
-import blgimg from "../asset/blg.png";
 
 function Conatct() {
   const config = {

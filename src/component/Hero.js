@@ -13,28 +13,33 @@ function Hero() {
   };
 
   return (
-    <section className="flex px-5 py-20 bg-secondary">
-      <div className="md:w-1/2">
+    <section className="flex flex-col md:flex-row px-5 py-20 bg-secondary justify-center">
+      <div className="md:w-1/2 flex flex-col">
         <h1 className=" text-black text-6xl font-hero-font">
+          {" "}
           Hi,
           <br />
           {config.subtitle} <br />
           <p className="text-2xl py-1">{config.jobdec}</p>
         </h1>
         <div className=" flex ph-10 py-5 md:w-1/2">
-          <a href="#" className="pr-5 hover:text-white">
+          <a
+            href="https://www.linkedin.com/in/vasu-devan-a04368119/"
+            className="pr-5"
+          >
+            {" "}
             <AiFillLinkedin size={40} />
           </a>
-          <a href="#" className="pr-5 hover:text-white">
+          <a href="https://www.instagram.com/" className="pr-5">
             <AiFillInstagram size={40} />
           </a>
-          <a href="# " className="hover:text-white">
+          <a href="https://www.facebook.com/">
             <AiFillFacebook size={40} />
           </a>
         </div>
       </div>
       <div className="md:w-1/2">
-        <img className="" src={HeroImg} alt="img"></img>{" "}
+        <img src={HeroImg} alt="img"></img>
       </div>
     </section>
   );

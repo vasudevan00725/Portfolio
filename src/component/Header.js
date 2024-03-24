@@ -2,17 +2,18 @@ import React from "react";
 import { useState } from "react";
 import { Bars3Icon } from "@heroicons/react/24/solid";
 
-const Header = () => {
+function Header() {
   const [toggleMenu, setToggleMenu] = useState(false);
   return (
     <header className="flex justify-between px-10 py-8 bg-gradient-to-r from-zinc-600 ... subpixel-antialiased">
-      <a className="font-bold text-white text-5xl" href="#">
-        Vasu Portfolio
+      <a className="font-bold text-white text-5xl" href="#home">
+        {" "}
+        Vasu Portfolio{" "}
       </a>
       <nav class="hidden md:block ">
         <ul className="flex  text-black py-5">
           <li>
-            <a href="/">Home</a>
+            <a href="#hero">Home</a>
           </li>
           <li>
             <a href="#about">About</a>
@@ -36,7 +37,7 @@ const Header = () => {
             className="flex flex-col  text-white mobile-nav"
           >
             <li>
-              <a href="#">Home</a>
+              <a href="#home">Home</a>
             </li>
             <li>
               <a href="#about">About</a>
@@ -61,6 +62,6 @@ const Header = () => {
       </button>
     </header>
   );
-};
+}
 
 export default Header;

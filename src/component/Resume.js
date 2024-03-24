@@ -11,7 +11,11 @@ function Resume() {
       className="flex flex-col md:flex-row bg-primary bg-gradient-to-r from-gray-200 to-gray-600 ...px-5"
     >
       <div className=" py-5 md:w-1/2 flex justify-end">
-        <img className="w-[600px] rounded-3xl" src={resimg}></img>
+        <img
+          className="w-[600px] rounded-3xl"
+          src={resimg}
+          alt="resume lable"
+        ></img>
       </div>
       <div className="md:w-1/2 flex justify-center">
         <div className="flex flex-col justify-center text-white pl-5">
